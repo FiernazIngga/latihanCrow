@@ -427,8 +427,8 @@
                 <h2>Data Kendaraan Parkir</h2>
                 
                 <div class="sorting-buttons">
-                    <button onclick="window.location.href='/cariAsc'">Sorting Turun</button>
-                    <button onclick="window.location.href='/cariDesc'">Sorting Naik</button>
+                    <button onclick="window.location.href='/cariAsc'">Sorting Naik</button>
+                    <button onclick="window.location.href='/cariDesc'">Sorting Turun</button>
                 </div>
 
                 <table>
@@ -438,7 +438,6 @@
                             <th>Tipe Kendaraan</th>
                             <th>Plat Kendaraan</th>
                             <th>Biaya Parkir</th>
-                            <th>Denda Parkir</th>
                             <th>Waktu Masuk</th>
                             <th>Waktu Keluar</th>
                             <th>Lihat Karcis</th>
@@ -501,7 +500,6 @@
                             <td>${kendaraan.tipe_kendaraan}</td>
                             <td>${kendaraan.plat_kendaraan}</td>
                             <td>Rp ${kendaraan.biaya_parkir}</td>
-                            <td>Rp ${kendaraan.denda_parkir}</td>
                             <td>${kendaraan.waktu_masuk}</td>
                             <td>${kendaraan.waktu_keluar || '-'}</td>
                             <td><button type="button" class="buttonWeb" data-id=${kendaraan.id_kendaraan}>Cek</button></td>

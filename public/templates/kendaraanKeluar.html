@@ -531,6 +531,10 @@
     async function bayarKendaraanKeluar(idPlat, uangBayar, hargaParkir) {
         const response = await fetch(`/hapusKendaraanKeluar/${idPlat}`);
         const respon = await response.json();
+        setTimeout(() => {
+            console.log(response);
+            console.log(respon);
+        }, 200000);
         if (respon.cekBol) {
             alert(`${respon.message}`);
             let uangYangDibayar = parseInt(uangBayar);
